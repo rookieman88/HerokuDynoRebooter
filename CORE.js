@@ -6,7 +6,7 @@ app.login(process.env.BotToken)
 
 app.on('message', (message) => {
 
-	if(message.content.startsWith(`도리닭 리붓`)){
+	if(message.content.startsWith(`리붓`)){
     if (message.author.id === '님ID_Here') {
       heroku.delete('/apps/앱이름/dynos/worker')
  
